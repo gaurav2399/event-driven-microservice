@@ -1,0 +1,51 @@
+2024-09-01 15:27:46 [main] INFO  c.m.k.TwitterToKafkaServiceApplication - Hello Kafka App
+2024-09-01 15:30:18 [main] INFO  c.m.k.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.10 with PID 10772 (C:\Users\Hp\IntellijProjects\spring-projects\kafka course\Microservice-for-kafka-demo\twitter-to-kafka-service\target\classes started by Hp in C:\Users\Hp\IntellijProjects\spring-projects\kafka course\Microservice-for-kafka-demo)
+2024-09-01 15:30:18 [main] INFO  c.m.k.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-01 15:30:20 [main] INFO  c.m.k.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 2.747 seconds (process running for 4.221)
+2024-09-01 15:30:20 [main] INFO  c.m.k.TwitterToKafkaServiceApplication - App starts
+2024-09-01 15:30:20 [main] INFO  c.m.k.TwitterToKafkaServiceApplication - hello config
+2024-09-01 15:30:20 [main] INFO  c.m.k.TwitterToKafkaServiceApplication - Hello Kafka App
+2024-09-01 16:50:56 [main] INFO  c.m.k.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.10 with PID 14680 (C:\Users\Hp\IntellijProjects\spring-projects\kafka course\Microservice-for-kafka-demo\twitter-to-kafka-service\target\classes started by Hp in C:\Users\Hp\IntellijProjects\spring-projects\kafka course\Microservice-for-kafka-demo)
+2024-09-01 16:50:56 [main] INFO  c.m.k.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-01 16:50:58 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterKafkaStreamRunner' defined in file [C:\Users\Hp\IntellijProjects\spring-projects\kafka course\Microservice-for-kafka-demo\twitter-to-kafka-service\target\classes\com\microservice\kafka\runner\impl\TwitterKafkaStreamRunner.class]: Unsatisfied dependency expressed through constructor parameter 2: No qualifying bean of type 'twitter4j.TwitterStream' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-09-01 16:50:58 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-09-01 16:50:58 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in com.microservice.kafka.runner.impl.TwitterKafkaStreamRunner required a bean of type 'twitter4j.TwitterStream' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'twitter4j.TwitterStream' in your configuration.
+
+2024-09-01 16:51:53 [main] INFO  c.m.k.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.10 with PID 11800 (C:\Users\Hp\IntellijProjects\spring-projects\kafka course\Microservice-for-kafka-demo\twitter-to-kafka-service\target\classes started by Hp in C:\Users\Hp\IntellijProjects\spring-projects\kafka course\Microservice-for-kafka-demo)
+2024-09-01 16:51:53 [main] INFO  c.m.k.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-01 16:51:55 [main] INFO  c.m.k.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 2.521 seconds (process running for 4.13)
+2024-09-01 16:51:55 [main] INFO  c.m.k.TwitterToKafkaServiceApplication - App starts
+2024-09-01 16:51:55 [main] INFO  c.m.k.TwitterToKafkaServiceApplication - [Java, Spring, Microservice, Kafka]
+2024-09-01 16:51:55 [main] INFO  c.m.k.TwitterToKafkaServiceApplication - Hello Microservice!
+2024-09-01 18:03:01 [main] INFO  c.m.k.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.10 with PID 14672 (C:\Users\Hp\IntellijProjects\spring-projects\kafka course\Microservice-for-kafka-demo\twitter-to-kafka-service\target\classes started by Hp in C:\Users\Hp\IntellijProjects\spring-projects\kafka course\Microservice-for-kafka-demo)
+2024-09-01 18:03:01 [main] INFO  c.m.k.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-01 18:03:04 [main] INFO  c.m.k.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 4.262 seconds (process running for 9.369)
+2024-09-01 18:03:04 [main] INFO  c.m.k.TwitterToKafkaServiceApplication - App starts
+2024-09-01 18:03:04 [main] INFO  c.m.k.TwitterToKafkaServiceApplication - [Java, Spring, Microservice, Kafka]
+2024-09-01 18:03:04 [main] INFO  c.m.k.TwitterToKafkaServiceApplication - Hello Microservice!
+2024-09-01 18:04:44 [main] INFO  c.m.k.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.10 with PID 14240 (C:\Users\Hp\IntellijProjects\spring-projects\kafka course\Microservice-for-kafka-demo\twitter-to-kafka-service\target\classes started by Hp in C:\Users\Hp\IntellijProjects\spring-projects\kafka course\Microservice-for-kafka-demo)
+2024-09-01 18:04:44 [main] INFO  c.m.k.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-01 18:04:45 [main] INFO  c.m.k.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 2.505 seconds (process running for 3.825)
+2024-09-01 18:04:45 [main] INFO  c.m.k.TwitterToKafkaServiceApplication - App starts
+2024-09-01 18:04:45 [main] INFO  c.m.k.TwitterToKafkaServiceApplication - [Java, Spring, Microservice, Kafka]
+2024-09-01 18:04:45 [main] INFO  c.m.k.TwitterToKafkaServiceApplication - Hello Microservice!
+2024-09-01 18:04:45 [main] INFO  c.m.k.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Spring, Microservice, Kafka]
+2024-09-01 18:04:46 [pool-2-thread-1] INFO  c.m.k.l.TwitterKafkaStatusListener - Twitter status with text ipsum Maecenas consectetuer amet malesuada Kafka amet amet congue
+2024-09-01 18:04:56 [pool-2-thread-1] INFO  c.m.k.l.TwitterKafkaStatusListener - Twitter status with text libero Lorem elit Maecenas Lorem magna Kafka libero sit malesuada posuere
+2024-09-01 18:05:06 [pool-2-thread-1] INFO  c.m.k.l.TwitterKafkaStatusListener - Twitter status with text lectus massa amet congue sed magna Spring pulvinar libero massa porttitor
+2024-09-01 18:05:16 [pool-2-thread-1] INFO  c.m.k.l.TwitterKafkaStatusListener - Twitter status with text pulvinar adipiscing purus lectus sit Microservice sit posuere lectus magna
