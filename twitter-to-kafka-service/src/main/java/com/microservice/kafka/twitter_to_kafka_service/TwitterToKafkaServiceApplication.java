@@ -2,6 +2,7 @@ package com.microservice.kafka.twitter_to_kafka_service;
 
 import com.microservice.kafka.twitter_to_kafka_service.runner.StreamRunner;
 import com.microservice.kafka.config.TwitterToKafkaServiceConfigData;
+import com.microservice.kafka.twitter_to_kafka_service.init.StreamInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -17,25 +18,23 @@ public class TwitterToKafkaServiceApplication implements CommandLineRunner {
 
     private static final Logger LOG = LoggerFactory.getLogger(TwitterToKafkaServiceApplication.class);
 
-    private final TwitterToKafkaServiceConfigData configData;
-
     private final StreamRunner streamRunner;
 
-    TwitterToKafkaServiceApplication(TwitterToKafkaServiceConfigData configData,
-                                     StreamRunner streamRunner){
-        this.configData = configData;
-        this.streamRunner = streamRunner;
+    private final StreamInitializer streamInitializer;
+
+    public TwitterToKafkaServiceApplication(StreamRunner runner, StreamInitializer initializer) {
+        this.streamRunner = runner;
+        this.streamInitializer = initializer;
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(TwitterToKafkaServiceApplication.class);
+        SpringApplication.run(TwitterToKafkaServiceApplication.class, args);
     }
 
     @Override
     public void run(String... args) throws Exception {
-        LOG.info("App starts");
-        LOG.info(Arrays.toString(configData.getTwitterKeywords().toArray(new String[] {})));
-        LOG.info(configData.getWelcomeMessage());
+        LOG.info("App starts...");
+        streamInitializer.init();
         streamRunner.start();
     }
 }
